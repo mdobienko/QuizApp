@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <!--main text above question, located on the left of the picture-->
+    <string name="main_text">How good is your geography?</string>
+
+    <!--First question bellow main text-->
+    <string name="first_question">Capital of Poland</string>
+    <!--First answer for first question -->
+    <string name="first_answer_f_q">Bratislava</string>
+    <!--Second answer for first question -->
+    <string name="second_answer_f_q">Warsaw</string>
+    <!--Third answer for first question -->
+    <string name="third_answer_f_q">Vilnius</string>
+
+    <!--Second question-->
+    <string name="second_question">The longest Asian river</string>
+    <!--First answer for second question -->
+    <string name="first_answer_s_q">Yangtze</string>
+    <!--Second answer for second question -->
+    <string name="second_answer_s_q">Nile</string>
+    <!--Third answer for second question -->
+    <string name="third_answer_s_q">Ob River</string>
+
+    <!--Third question-->
+    <string name="third_question">How many Continents are there in The World?</string>
+    <!--hint to the third question-->
+    <string name="hint_third_question">Enter the number</string>
+    <!--Invisible answer to third question-->
+    <string name="answer_third_question">7</string>
+
+    <!--4th question-->
+    <string name="fourth_question">Which cities are in Europe</string>
+    <!--First answer for 4th question -->
+    <string name="first_answer_4th_q">Moscow</string>
+    <!--Second answer for 4th question -->
+    <string name="second_answer_4th_q">Cairo</string>
+    <!--Third answer for 4th question -->
+    <string name="third_answer_4th_q">Sydney</string>
+    <!--4th answer for 4th question -->
+    <string name="fourth_answer_4th_q">Belgrade</string>
+    <!--5th answer for 4th question -->
+    <string name="fifth_answer_4th_q">Capetown</string>
+    <!--6th answer for 4th question -->
+    <string name="sixth_answer_4th_q">Canton</string>
+
+    <!--Fifth question-->
+    <string name="fifth_question">The highest mountain in South America</string>
+    <!--First answer for second question -->
+    <string name="first_answer_5_q">Annapurna</string>
+    <!--Second answer for second question -->
+    <string name="second_answer_5_q">Elbrus</string>
+    <!--Third answer for second question -->
+    <string name="third_answer_5_q">Aconcagua</string>
+
+    <!--Results button-->
+    <string name="result">Results</string>
+    <!--Show good answers  button-->
+    <string name="show_good_answers">Show good answers</string>
+    <!--Reset button-->
+    <string name="reset">Reset</string>
+
+</resources>
