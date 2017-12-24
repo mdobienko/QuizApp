@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 /**
  * Made by Marcin Dobienko
- * 
+ *
  * Quiz of Geography, check basic knowledge. App can checks correct answers and display points.
  * It can display correct answers when button "show good answers" is pressed.
  * Button "RESET" clear all answers. Enjoy.
