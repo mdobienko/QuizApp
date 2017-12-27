@@ -60,7 +60,16 @@ public class MainActivity extends AppCompatActivity {
         boolean toCheckFirstCheckBox = firstCheckBox.isChecked();
         CheckBox fourthCheckBox = (CheckBox) findViewById(R.id.fourth_checkbox);
         boolean toCheckFourCheckBox = fourthCheckBox.isChecked();
-        if (toCheckFirstCheckBox && toCheckFourCheckBox) {
+        CheckBox secondCheckBox = (CheckBox) findViewById(R.id.second_checkbox);
+        boolean toCheckSecondCheckBox = secondCheckBox.isChecked();
+        CheckBox thirdCheckBox = (CheckBox) findViewById(R.id.third_checkbox);
+        boolean toThirdSecondCheckBox = thirdCheckBox.isChecked();
+        CheckBox fifthCheckBox = (CheckBox) findViewById(R.id.fifth_checkbox);
+        boolean toCheckSFifthCheckBox = fifthCheckBox.isChecked();
+        CheckBox sixthCheckBox = (CheckBox) findViewById(R.id.sixth_checkbox);
+        boolean toCheckSixthCheckBox = sixthCheckBox.isChecked();
+        if ((toCheckFirstCheckBox && toCheckFourCheckBox) &&
+                (toCheckSecondCheckBox==false && toThirdSecondCheckBox==false && toCheckSFifthCheckBox==false && toCheckSixthCheckBox==false)) {
             point++;
         }
 
