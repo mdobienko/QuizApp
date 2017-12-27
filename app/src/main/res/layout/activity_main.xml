@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#00796B">
+            android:background="@color/mainColorText">
 
             <TextView
                 android:layout_width="0dp"
@@ -23,7 +23,7 @@
                 android:layout_weight="7"
                 android:gravity="center"
                 android:text="@string/main_text"
-                android:textColor="#000000"
+                android:textColor="@color/textColorBlack"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#009688"
+            android:background="@color/firstPartColorText"
             android:orientation="vertical">
 
             <TextView
@@ -48,7 +48,7 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/first_question"
-                android:textColor="#000000"
+                android:textColor="@color/textColorBlack"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -62,7 +62,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/first_answer_f_q" />
 
@@ -71,7 +70,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/second_answer_f_q" />
 
@@ -79,7 +77,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/third_answer_f_q" />
 
@@ -91,7 +88,7 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/second_question"
-                android:textColor="#000000"
+                android:textColor="@color/textColorBlack"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -107,7 +104,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/first_answer_s_q" />
 
@@ -115,7 +111,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/second_answer_s_q" />
 
@@ -135,7 +130,7 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/fifth_question"
-                android:textColor="#000000"
+                android:textColor="@color/textColorBlack"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -150,7 +145,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/first_answer_5_q" />
 
@@ -158,7 +152,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/second_answer_5_q" />
 
@@ -167,7 +160,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@null"
                     android:paddingLeft="8dp"
                     android:text="@string/third_answer_5_q" />
 
@@ -179,7 +171,7 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="@string/third_question"
-                android:textColor="#000000"
+                android:textColor="@color/textColorBlack"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -212,7 +204,7 @@
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#80CBC4"
+                android:background="@color/secondPartColorBackground"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp">
 
@@ -223,7 +215,7 @@
                     android:gravity="center"
                     android:paddingBottom="8dp"
                     android:text="@string/fourth_question"
-                    android:textColor="#000000"
+                    android:textColor="@color/textColorBlack"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -295,7 +287,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#80CBC4">
+            android:background="@color/secondPartColorBackground">
 
             <Button
                 android:layout_width="0dp"
