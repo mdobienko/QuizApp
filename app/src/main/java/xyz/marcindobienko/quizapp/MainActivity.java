@@ -21,10 +21,44 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Define variables for Radiobuttons, EditText, TextView and Checkboxes
+     * @param savedInstanceState
+     */
+    private RadioButton firstRadioButton;
+    private RadioButton secondRadioButton;
+    private RadioButton thirdRadioButton;
+    private EditText editText;
+    private CheckBox firstCheckBox;
+    private CheckBox secondCheckBox;
+    private CheckBox thirdCheckBox;
+    private CheckBox fourthCheckBox;
+    private CheckBox fifthCheckBox;
+    private CheckBox sixthCheckBox;
+    private TextView textView;
+    private RadioGroup firstRadioGroup;
+    private RadioGroup secondRadioGroup;
+    private RadioGroup thirdRadioGroup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        firstRadioButton = (RadioButton) findViewById(R.id.correct_first_answer);
+        secondRadioButton = (RadioButton) findViewById(R.id.correct_second_answer);
+        thirdRadioButton = (RadioButton) findViewById(R.id.correct_third_answer);
+        editText = (EditText) findViewById(R.id.first_edit_text);
+        firstCheckBox = (CheckBox) findViewById(R.id.first_checkbox);
+        secondCheckBox = (CheckBox) findViewById(R.id.second_checkbox);
+        thirdCheckBox = (CheckBox) findViewById(R.id.third_checkbox);
+        fourthCheckBox = (CheckBox) findViewById(R.id.fourth_checkbox);
+        fifthCheckBox = (CheckBox) findViewById(R.id.fifth_checkbox);
+        sixthCheckBox = (CheckBox) findViewById(R.id.sixth_checkbox);
+        textView = (TextView) findViewById(R.id.correct_invisible_text);
+        firstRadioGroup = (RadioGroup) findViewById(R.id.first_radio_group);
+        secondRadioGroup = (RadioGroup) findViewById(R.id.second_radio_group);
+        thirdRadioGroup = (RadioGroup) findViewById(R.id.third_radio_group);
     }
 
     /**
@@ -35,39 +69,31 @@ public class MainActivity extends AppCompatActivity {
     public void displayResults(View view) {
         int point = 0;
 
-        RadioButton firstRadioButton = (RadioButton) findViewById(R.id.correct_first_answer);
         boolean toCheckOne = firstRadioButton.isChecked();
         if (toCheckOne) {
             point++;
         }
-        RadioButton secondRadioButton = (RadioButton) findViewById(R.id.correct_second_answer);
         boolean toCheckTwo = secondRadioButton.isChecked();
         if (toCheckTwo) {
             point++;
         }
-        RadioButton thirdRadioButton = (RadioButton) findViewById(R.id.correct_third_answer);
         boolean toCheckThree = thirdRadioButton.isChecked();
         if (toCheckThree) {
             point++;
         }
-        EditText editText = (EditText) findViewById(R.id.first_edit_text);
+
         String toCheckFour = editText.getText().toString();
         String answer = "7";
         if (toCheckFour.equals(answer)) {
             point++;
         }
-        CheckBox firstCheckBox = (CheckBox) findViewById(R.id.first_checkbox);
         boolean toCheckFirstCheckBox = firstCheckBox.isChecked();
-        CheckBox fourthCheckBox = (CheckBox) findViewById(R.id.fourth_checkbox);
         boolean toCheckFourCheckBox = fourthCheckBox.isChecked();
-        CheckBox secondCheckBox = (CheckBox) findViewById(R.id.second_checkbox);
         boolean toCheckSecondCheckBox = secondCheckBox.isChecked();
-        CheckBox thirdCheckBox = (CheckBox) findViewById(R.id.third_checkbox);
         boolean toThirdSecondCheckBox = thirdCheckBox.isChecked();
-        CheckBox fifthCheckBox = (CheckBox) findViewById(R.id.fifth_checkbox);
         boolean toCheckSFifthCheckBox = fifthCheckBox.isChecked();
-        CheckBox sixthCheckBox = (CheckBox) findViewById(R.id.sixth_checkbox);
         boolean toCheckSixthCheckBox = sixthCheckBox.isChecked();
+
         if ((toCheckFirstCheckBox && toCheckFourCheckBox) &&
                 (toCheckSecondCheckBox==false && toThirdSecondCheckBox==false && toCheckSFifthCheckBox==false && toCheckSixthCheckBox==false)) {
             point++;
@@ -81,27 +107,17 @@ public class MainActivity extends AppCompatActivity {
      * Reset all introduced data, checked boxes and radioGroups in QuizApp
      */
     public void resetData() {
-        RadioGroup firstRadioGroup = (RadioGroup) findViewById(R.id.first_radio_group);
+
         firstRadioGroup.clearCheck();
-        RadioGroup secondRadioGroup = (RadioGroup) findViewById(R.id.second_radio_group);
         secondRadioGroup.clearCheck();
-        RadioGroup thirdRadioGroup = (RadioGroup) findViewById(R.id.third_radio_group);
         thirdRadioGroup.clearCheck();
-        EditText editText = (EditText) findViewById(R.id.first_edit_text);
         editText.getText().clear();
-        CheckBox firstCheckBox = (CheckBox) findViewById(R.id.first_checkbox);
         firstCheckBox.setChecked(false);
-        CheckBox secondCheckBox = (CheckBox) findViewById(R.id.second_checkbox);
         secondCheckBox.setChecked(false);
-        CheckBox thirdCheckBox = (CheckBox) findViewById(R.id.third_checkbox);
         thirdCheckBox.setChecked(false);
-        CheckBox fourthCheckBox = (CheckBox) findViewById(R.id.fourth_checkbox);
         fourthCheckBox.setChecked(false);
-        CheckBox fifthCheckBox = (CheckBox) findViewById(R.id.fifth_checkbox);
         fifthCheckBox.setChecked(false);
-        CheckBox sixthCheckBox = (CheckBox) findViewById(R.id.sixth_checkbox);
         sixthCheckBox.setChecked(false);
-        TextView textView = (TextView) findViewById(R.id.correct_invisible_text);
         textView.setVisibility(View.INVISIBLE);
     }
 
@@ -112,19 +128,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void showGoodAnswers(View view) {
         resetData();
-        RadioButton firstRadionButton = (RadioButton) findViewById(R.id.correct_first_answer);
-        firstRadionButton.setChecked(true);
-        RadioButton secondRadionButton = (RadioButton) findViewById(R.id.correct_second_answer);
-        secondRadionButton.setChecked(true);
-        RadioButton thirdRadionButton = (RadioButton) findViewById(R.id.correct_third_answer);
-        thirdRadionButton.setChecked(true);
-        EditText editText = (EditText) findViewById(R.id.first_edit_text);
+        firstRadioButton.setChecked(true);
+        secondRadioButton.setChecked(true);
+        thirdRadioButton.setChecked(true);
         editText.setText("7");
-        TextView textView = (TextView) findViewById(R.id.correct_invisible_text);
         textView.setVisibility(View.VISIBLE);
-        CheckBox firstCheckBox = (CheckBox) findViewById(R.id.first_checkbox);
         firstCheckBox.setChecked(true);
-        CheckBox fourthCheckBox = (CheckBox) findViewById(R.id.fourth_checkbox);
         fourthCheckBox.setChecked(true);
     }
 
